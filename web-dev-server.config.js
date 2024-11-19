@@ -12,12 +12,13 @@ if (!['dev', 'prod'].includes(mode)) {
 }
 
 export default {
+  appIndex: 'index.html',
+  watch: true, // Its for hot reload
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
   preserveSymlinks: true,
   plugins: [
     legacyPlugin({
       polyfills: {
-        // Manually imported in index.html file
         webcomponents: false,
       },
     }),
