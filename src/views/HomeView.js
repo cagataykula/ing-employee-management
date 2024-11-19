@@ -9,6 +9,11 @@ class HomeView extends LitElement {
       justify-content: space-between;
       align-items: center;
     }
+    @media (max-width: 568px) {
+      .page-header {
+        flex-direction: column;
+      }
+    }
     h2 {
       color: ${colors.ingOrange};
     }
@@ -27,8 +32,8 @@ class HomeView extends LitElement {
   `;
 
   constructor() {
-    super()
-    updateWhenLocaleChanges(this)
+    super();
+    updateWhenLocaleChanges(this);
   }
 
   render() {
@@ -38,7 +43,9 @@ class HomeView extends LitElement {
       </div>
       <div class="content">
         <h5>${msg('ING Employee Management System')}</h5>
-        <p>${msg('In this case study, LocalStorage is used to store and manage employee data within the browser. LocalStorage is a simple key-value storage mechanism that allows developers to persist data across page reloads without requiring a backend server.')}</p>
+        <p>${msg(
+          'In this case study, LocalStorage is used to store and manage employee data within the browser. LocalStorage is a simple key-value storage mechanism that allows developers to persist data across page reloads without requiring a backend server.'
+        )}</p>
         <p><span class="highlight">Cagatay Kula</span></p>
         <a class="highlight" target="_blank" href="https://www.linkedin.com/in/cagataykula/">LinkedIn</a>
         <a class="highlight" target="_blank" href="https://github.com/cagataykula">Github</a>

@@ -10,14 +10,9 @@ export const sourceLocale = `en`;
  * The other locale codes that this application is localized into. Sorted
  * lexicographically.
  */
-export const targetLocales = [
-  `tr-TR`,
-];
+export const targetLocales = [`tr-TR`];
 
 /**
  * All valid project locale codes. Sorted lexicographically.
  */
-export const allLocales = [
-  `en`,
-  `tr-TR`,
-];
+export const allLocales = [`en`, `tr-TR`];

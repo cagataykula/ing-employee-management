@@ -23,6 +23,14 @@ export class DataTable extends LitElement {
       width: 100%;
       border-collapse: collapse;
     }
+    @media (max-width: 968px) {
+      table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        display: block;
+        width: 100%;
+      }
+    }
     thead {
       th {
         color: ${colors.ingOrange};

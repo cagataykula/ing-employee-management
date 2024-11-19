@@ -181,6 +181,11 @@ class EmployeeListView extends LitElement {
       justify-content: space-between;
       align-items: center;
     }
+    @media (max-width: 568px) {
+      .page-header {
+        flex-direction: column;
+      }
+    }
     h2 {
       color: ${colors.ingOrange};
     }
